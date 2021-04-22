@@ -1,0 +1,136 @@
+/*You can add global styles to this file, and also import other style files */
+
+body {
+    margin-top: 40px;
+}
+
+a{
+    text-decoration: none;
+}
+.item {
+    display: block;
+    margin: 10px auto;
+    padding: 5px;
+    max-width: 700px;
+    min-height: fit-content;
+    position: relative;
+}
+
+.item:before, .item:after {
+    content: "";
+    display: table;
+}
+
+.item:after {
+    clear: both;
+}
+
+.item.selected {
+    box-shadow: 0 0 0 2px grey;
+    border-radius: 5px;
+}
+
+.topHeader {
+    padding: 30px;
+    text-align: center;
+    background: blanchedalmond;
+    color: #337ab7;
+    font-size: 30px;
+  }
+.topHeader h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+.tabMenu{
+    width: 33.33%;
+    text-align: center;
+    font-size: 20px;
+    background-color: blanchedalmond;
+    color: black;
+}
+
+.modalImg{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tabBox{
+    padding: 20px;
+    height: 620px;
+    border-bottom: 2px solid rgb(179, 172, 172);
+}
+
+.product-image {
+    float: left;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    clear: both;
+}
+
+.topBread{
+    text-align: center;
+}
+
+.content{
+    padding: 20px;
+}
+.header {
+    font: bold 1.2em sans-serif;
+    padding: 10px;
+}
+
+.product-sku {
+    line-height: 2em;
+}
+
+.price-display {
+    position: absolute;
+    top: 20px;
+    bottom: 5px;
+    right: 30px;
+    font-size: 2em;
+    color: #337ab7;;
+}
+
+.btn-product{
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    border-radius: 4px;
+    background: blanchedalmond;
+    color: #337ab7;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    padding: 8px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.btn-product span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .btn-product span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .btn-product:hover span {
+    padding-right: 25px;
+  }
+  
+  .btn-product:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

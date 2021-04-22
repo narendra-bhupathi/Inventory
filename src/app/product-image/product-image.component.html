@@ -1,0 +1,6 @@
+<img class="product-image" [src]="product.imageUrl">
+
+<button (click)="showDialog = !showDialog" class="btn-product" ><span>Product Image</span></button>
+  <app-dialog [(visible)]="showDialog">
+    <img class="modalImg" [src]="product.imageUrl" alt="Shoe"/>
+  </app-dialog>

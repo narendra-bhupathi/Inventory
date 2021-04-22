@@ -1,0 +1,11 @@
+<div class="ui items">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb" style="text-align: center;">
+      <li class="breadcrumb-item"><a href="#">Products</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Products-list</li>
+    </ol>
+  </nav>
+  <product-row *ngFor="let myProduct of productsList" [product]="myProduct"
+    (click)="clicked(myProduct)" [class.selected]="isSelected(myProduct)">
+  </product-row>
+</div>
